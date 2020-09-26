@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/double-lined.png");
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+header #btn-logout {
+  background-color: #f5ba13;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgba(180, 180, 180, 0.5);
+  padding: 10px;
+}
+
+footer p {
+  color: #fff;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* LogIn page */
+.login-page {
+  text-align: center;
+  display: flex;
+  height: 100vh
+}
+
+.login-form {
+  background: #FFF;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  align-self: center;
+  min-width: 250px;
+  min-height: 300px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-header {
+  background: #f5ba13;
+}
+
+.login-form h1 {
+  color: #eee;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.login-form form {
+  margin: 20px 0;
+  margin-bottom: 0;
+}
+
+.login-form input {
+  margin: 5px auto;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 75%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: none;
+  background: rgba(180, 180, 180, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  text-align: left;
+} 
+
+
+.login-form input[type="submit"] {
+  border: 1.5px solid #f5a013;
+  color: #eee;
+  /*background-image: linear-gradient(to top, #f5a013, #f5ba13);*/
+  background: #f5a013;
+}
+
+.login-form input[type="submit"]:hover {
+  border: 1.5px solid #000;
+  background: #eee;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-footer {
+  font-size: 14px;
+  margin: 15px auto;;
+}
+
+.login-form a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Notes page */
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note-date {
+  float: left;
+  font-size: 0.8em;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  background-color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
