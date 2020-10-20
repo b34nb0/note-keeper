@@ -1,9 +1,6 @@
 {
-  "name": "client",
+  "name": "note-keeper",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -23,6 +20,9 @@
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
