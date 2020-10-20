@@ -1,6 +1,6 @@
 # Note-Keeper App  
   
-* Live App: https://sleepy-anchorage-95771.herokuapp.com/login  
+* Live App: https://sleepy-anchorage-95771.herokuapp.com  
   
 This little project is a note-keeping web app built using __Node.js__ and __React\*__.  
 It was developed taking @angelabauer 's _Keeper_ app as starting point.    
