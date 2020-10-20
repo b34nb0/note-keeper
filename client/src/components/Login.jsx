@@ -51,7 +51,7 @@ function Login() {
         if(validateForm()) {
             
             //Auhtenticate user
-            Axios.post('http://localhost:8080/users/login', {...user})
+            Axios.post('/api/users/login', {...user})
                 .then(res => {
                     if(res.status === 200) {
                         //console.log(res);

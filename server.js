@@ -20,11 +20,11 @@ connection.once('open', () => {
 });
 
 // Routes
-const usersRouter = require('./routes/users');
-const notesRouter = require('./routes/notes');
+const usersRouter = require('./routes/api/users');
+const notesRouter = require('./routes/api/notes');
 
-app.use('/users',usersRouter);
-app.use('/notes',notesRouter);
+app.use('/api/users',usersRouter);
+app.use('/api/notes',notesRouter);
 
 
 // Start up server

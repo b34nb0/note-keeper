@@ -6,7 +6,7 @@ function Header(props) {
   function logoutUser() {
     // Log out user and redirect to '/login'
     localStorage.removeItem("user");
-    window.location.replace('/login');
+    window.location.href = '/login';
   }
 
   return (

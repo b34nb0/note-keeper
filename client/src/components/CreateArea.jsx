@@ -35,7 +35,7 @@ function CreateArea(props) {
       content: ""
     });
 
-    Axios.post('http://localhost:8080/notes/', {
+    Axios.post('/api/notes/', {
       title : note.title,
       content : note.content,
       username : props.username

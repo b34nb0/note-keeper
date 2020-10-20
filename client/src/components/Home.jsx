@@ -9,12 +9,12 @@ import Axios from "axios";
 function Home() {
 
     const [notes, setNotes] = useState([]);
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+    const user = JSON.parse(localStorage.getItem("user"));
 
     useEffect(() => {
         if(user) {
             // Authenticate user
-            Axios.get(`http://localhost:8080/users/username/${user.username}`)
+            Axios.get(`/api/users/username/${user.username}`)
                 .then(res => { 
                     const doc = (res.data);
                     if(user.password === doc.password) {
@@ -37,7 +37,7 @@ function Home() {
 
 
     function loadData() {
-        Axios.get(`http://localhost:8080/users/user/${user.username}/notes`)
+        Axios.get(`/api/users/user/${user.username}/notes`)
             .then(res => { 
                 console.log(res.data);           
                 setNotes(res.data);
@@ -60,7 +60,7 @@ function Home() {
             });
         });
         
-        Axios.delete(`http://localhost:8080/notes/${id}`)
+        Axios.delete(`/api/notes/${id}`)
             .then(res => console.log(res))
             .catch(err => console.log('Error: ' + err));
         

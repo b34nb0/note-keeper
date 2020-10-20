@@ -78,7 +78,7 @@ function Register() {
 
         if(validateForm()) {
             if(checkPassword()) {
-                Axios.post('http://localhost:8080/users', {
+                Axios.post('/api/users', {
                     username : user.username,
                     email : user.email,
                     password : user.password
